@@ -1,0 +1,589 @@
+body{
+    margin:auto;
+    font-family: Nunito texte;
+}
+
+
+.row {
+    margin-right: 0;
+    margin-left: 0; 
+}
+
+
+@font-face{
+    font-family : "Nunito texte";
+    src:url('Nunito/Nunito-Regular.ttf');
+}   
+
+
+@font-face{
+    font-family : "Nunito black";
+    src:url('Nunito/Nunito-Black.ttf');
+} 
+
+
+@font-face{
+    font-family : "test";
+    src:url('Bauhaus/BauhausItalic.ttf');
+} 
+
+
+@font-face{
+    font-family : "titre";
+    src:url('Bauhaus/BauhausRegular.ttf');
+} 
+
+
+
+/* ======================================================================  NAVBAR ===========================================================================  */
+
+
+.nav-item a{
+    margin: 0px 5px;
+    color: black;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.navbar-nav .nav-link {
+    padding-right: 35px !important;
+    padding-left: 35px !important;
+}
+
+.navbar .navbar-nav .active>.nav-link, .navbar .navbar-nav .nav-link:hover{
+    color: white;
+    background-color: #b6dbe8;
+}
+
+
+.navbar-nav{
+    margin-right: 50px;
+}
+
+.navElement{
+    justify-content: flex-end;
+}
+
+
+.logo{
+    width: 45px;
+}
+
+
+/* ====================================================================================================================================================  */
+/* ======================================================================  HOMEPAGE ===========================================================================  */
+
+/*logo navbvar*/
+
+.home h1{
+    font-family : titre;
+    transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -webkit-transform: rotate(-7deg);
+    -khtml-transform: rotate(-7deg);
+    -ms-transform: rotate(-7deg);
+    font-size : 50px;
+}
+
+.home{
+    background-image: url(images/page1/Fond_1.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: -56px;
+}
+
+.home_content{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+
+.home_content_text{
+    padding-left: 100px;
+    padding-top: 130px;
+}
+
+.home_content_text h1, .home_content_text p {
+    color: white;
+}
+
+.home_content_text h2{
+    color: yellow;
+    margin-top: 35px;
+}
+
+.home img{
+    width: 400px;
+    padding-top: 100px;
+}
+
+
+/* ======================================================================  Images ===========================================================================  */
+
+.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+/* ======================================================================  Parcours ===========================================================================  */
+
+.parcours{
+    background-image: url(images/page1/Fond2.png);
+    background-size: cover;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.parcours h2{
+    color: #cc5379;
+    font-family : "titre";
+}
+
+
+/* ======================================================================  Citation ===========================================================================  */
+
+.citation{
+    background: #b6dbe8;
+    padding: 30px 0px;
+    color: white;
+    text-align: center;
+}
+
+.citation button{
+    background-color: #cc5379;
+    border-radius: 100px;
+    color: white;
+    padding: 10px 50px;
+}
+
+/* ======================================================================  L'équipe ===========================================================================  */
+
+.team{
+    background-image: url(images/page1/Fond3.png);
+    background-size: cover;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.team h2{
+    color: #5d336e;
+    font-family : "titre";
+}
+
+.team_profile .card{
+    border: 0px solid rgba(0,0,0,.125);
+    margin: 0px 5px;
+}
+  
+.team_profile > * {
+    grid-column: 2 / -2;
+}
+
+
+.hs {
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+}
+
+.hs:before,
+.hs:after {
+    content: '';
+    width: 10px;
+}
+
+.team_profile {
+    overflow-y: scroll;
+    margin: 30px 0px;
+}
+
+.no-scrollbar {
+    scrollbar-width: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+
+.team_profile img{
+    border-radius: 20px;
+    border: 1px grey solid;
+}
+
+.team_profile .card-body{
+    border-radius: 20px;
+    margin-top: -50px;
+    background: white;
+    border: 1px grey solid;
+    text-align: center;
+    padding: 10px;
+}
+
+.team_profile .card-title{
+    margin-bottom: 0px;
+}
+
+.team_profile a{
+    background-color: #f0be51;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+.team_profile a:hover{
+    background-color: #f0be51;
+}
+
+
+
+/* ======================================================================  Question ===========================================================================  */
+
+.question{
+    background: #b6dbe8;
+    padding-top: 25px;
+}
+
+.question h2{
+    color: #5d336e;
+    font-family : "titre";
+}
+
+.question .form-group{
+    width: 400px;
+}
+
+.question form button{
+    background-color: #5d336e;
+    border-radius: 100px;
+    color: white;
+    padding: 5px 15px;
+    margin-bottom: 30px;
+}
+
+.question img{
+    width: 250px;
+    position: absolute;
+    bottom: 0px;
+}
+
+
+
+/* ====================================================================================================================================================  */
+/* ====================================================================  TOUR DE FRANCE ===========================================================================  */
+
+.toursFrance{
+    background-image: url(images/page2/Fond1.png);
+    background-size: cover;
+    text-align: center;
+    padding: 50px 0px;
+    margin-top: -71px;
+}
+
+.toursFrance h1{
+    color: #5d336e;
+    font-family : "titre";
+    font-size: 50px;
+    margin-top: 71px;
+}
+
+/* ====================================================================  data ===========================================================================  */
+
+
+.data{
+    background: #5d336e;
+    padding: 30px 0px;
+    color: white;
+    text-align: center;
+}
+
+.data_content{
+    flex-direction: row;
+    display: inline-flex;
+    align-items: center;
+}
+
+.data_content img{
+    margin-right: 10px;
+    width: 44px;
+}
+
+.data_content_figure{
+    font-family : "titre";
+    font-size: 24px;
+}
+
+
+/* ====================================================================  villages ===========================================================================  */
+
+.villages{
+    background-image: url(images/page2/Fond2.png);
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.villages h2{
+    color: #5d336e;
+    font-family : "titre";
+}
+
+
+
+.villages_name .card{
+    border: 0px solid rgba(0,0,0,.125);
+    margin: 0px 5px;
+    height: 169px;
+}
+  
+.villages_name > * {
+    grid-column: 2 / -2;
+}
+
+
+.hs {
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+}
+
+.hs:before,
+.hs:after {
+    content: '';
+    width: 10px;
+}
+
+.villages_name {
+    overflow-y: scroll;
+    margin: 30px 0px;
+}
+
+.no-scrollbar {
+    scrollbar-width: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+
+.villages_name img{
+    border-radius: 20px;
+    border: 1px grey solid;
+    height: 162px;
+}
+
+.villages_name .card-body{
+    border-radius: 20px;
+    margin-top: -50px;
+    background: white;
+    border: 1px grey solid;
+    text-align: center;
+    padding: 6px;
+}
+
+.villages_name .card-title{
+    margin-bottom: 0px;
+    font-family : "Nunito black";
+    font-size: 16px;
+}
+
+.villages_name a{
+    background-color: #f0be51;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+.team_profile a:hover{
+    background-color: #f0be51;
+}
+
+
+/* ======================================================================  Inscription ===========================================================================  */
+
+
+.inscription{
+    background: #b6dbe8;
+    padding-top: 25px;
+}
+
+.inscription h2{
+    font-size: 22px;
+    color: white;
+}
+
+.inscription h3{
+    color: white;
+    font-size: 19px;
+}
+
+.inscription .form-group{
+    width: 400px;
+}
+
+.inscription .form-control{
+    border-radius: 100px;
+}
+
+.inscription form button{
+    background-color: #5d336e;
+    border-radius: 100px;
+    color: white;
+    padding: 5px 15px;
+    margin-bottom: 30px;
+}
+
+.inscription img{
+    width: 250px;
+    position: absolute;
+    bottom: 0px;
+}
+
+
+
+
+/* ====================================================================================================================================================  */
+/* ====================================================================  CATALOGUE ===========================================================================  */
+
+.homeCatalogue h1{
+    transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -webkit-transform: rotate(-7deg);
+    -khtml-transform: rotate(-7deg);
+    -ms-transform: rotate(-7deg);
+    font-size : 50px;
+}
+
+
+.homeCatalogue{
+    background-image: url(images/page3/fond3.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: -56px;
+}
+
+.homeCatalogue_content{
+    padding-top: 50px;
+    /* padding-bottom: 150px; */
+}
+
+
+.homeCatalogue_content_text{
+    padding-left: 100px;
+    padding-top: 130px;
+}
+
+.homeCatalogue_content_text h1, .homeCatalogue_content_text p {
+    color: white;
+}
+
+.homeCatalogue_content_text h2{
+    color: yellow;
+    font-size: 20px;
+    margin-top: 45px;
+}
+
+.homeCatalogue img{
+    width: 400px;
+    padding-top: 100px;
+}
+
+
+
+/* ====================================================================  GAMES ===========================================================================  */
+
+.games{
+    justify-content: center;
+    margin: 20px;
+}
+
+.games_content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding : 5px;
+    margin: 7px;
+}
+
+.games_content p{
+    color: white;
+    font-size: 14px;
+}
+
+.games_content img{
+    height: 80px;
+}
+
+.games_presentation1{
+    background-color: #b6dbe8;
+}
+
+.games_presentation2{
+    background-color: #f0be51;
+}
+
+.games_presentation3{
+    background-color: #cc5379;
+}
+
+
+.games_content_text{
+    padding-left: 15px;
+}
+
+/* ====================================================================  LIST GAMES ===========================================================================  */
+
+.gamesList{
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.gamesList_games{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gamesList_content{
+    margin-top: 40px;
+}
+
+.gamesList_games img{
+    height: 150px;
+}
+
+.gamesList h2{
+    color: #5d336e;
+    font-family : "titre";
+}
+
+.gamesList p{
+    font-size: 14px;
+}
+
+
+
+
+
+/* =========================================================================================================================================================  */
+/* ======================================================================  FOOTER ===========================================================================  */
+
+
+footer img{
+    width: 30px;
+    padding: 7px 0px;
+}
+
+.footer_picto,
+.footer_credit{
+    justify-content: center;
+}
